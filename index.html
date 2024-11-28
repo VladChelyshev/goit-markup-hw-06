@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container nav-header">
         <nav class="navigation-gl">
           <a href="./index.html" class="logo-nav header-logo"
@@ -55,16 +55,85 @@
           </svg>
         </button>
       </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-container container">
+          <button type="button" class="mobile-menu-btn">
+            <svg class="icon-close-black" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li class="mobile-item">Studio</li>
+              <li class="mobile-item">Portfolio</li>
+              <li class="mobile-item">Contacts</li>
+            </ul>
+          </nav>
+          <address class="address-mobile">
+            <ul class="address-mobile-list">
+              <li class="address-mobile-list-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="address-mobile-list-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-list-svg">
+            <li class="mobile-item-svg">
+              <svg
+                class="mobile-icon-instagram svg-ourteam-mobile"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="mobile-item-svg">
+              <svg
+                class="mobile-icon-twitter svg-ourteam-mobile"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="mobile-item-svg">
+              <svg
+                class="mobile-icon-facebook svg-ourteam-mobile"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="mobile-item-svg">
+              <svg
+                class="mobile-icon-linkedin svg-ourteam-mobile"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hidden section-f">
+      <section class="section-f hidden">
         <div class="container title-button">
           <h1 class="title">Effective Solutions for Your Business</h1>
           <button type="button" class="butt">Order Service</button>
         </div>
       </section>
-      <section class="hidden section container-b">
-        <div class="container">
+      <section class="hidden container-b">
+        <div class="container section-container-b">
           <h2 class="visually-hidden">something has to be</h2>
           <ul class="sectionbbb">
             <li class="sectionbbs">
@@ -118,8 +187,8 @@
           </ul>
         </div>
       </section>
-      <section class="section ourmark hidden">
-        <div class="container">
+      <section class="section ourmark">
+        <div class="container ourmark-container">
           <h2 class="our_team">Our Team</h2>
           <ul class="our-team">
             <li class="mark">
