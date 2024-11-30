@@ -353,7 +353,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/background/mobdark-bg@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -394,12 +394,26 @@ img {
 .butt:focus {
   background-color: #404bbf;
 }
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-f {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/mobdark-bg@2x.jpg);
+  }
+}
 @media (min-width: 768px) {
   .section-f {
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/dark-bgtab@1x.jpg);
   }
   .title {
     font-weight: 700;
@@ -416,11 +430,36 @@ img {
     margin-top: 36px;
   }
 }
+@media (min-width: 768px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-f {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/dark-bgtab@2x.jpg);
+  }
+}
 @media (min-width: 1158px) {
   .section-f {
     max-width: 1440px;
     padding: 188px 472px;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/people-office1desk@1x.jpg);
+  }
+  @media (min-width: 1158px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-f {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background/people-office1desk@2x.jpg);
+    }
   }
   .title {
     margin-bottom: 36px;
@@ -455,7 +494,7 @@ img {
 .sectionbbb {
   padding-left: 0;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   gap: 72px;
   margin: 0;
